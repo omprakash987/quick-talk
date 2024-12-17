@@ -8,7 +8,6 @@ import userRoutes from './routes/user.route.js';
 import cookieParser from 'cookie-parser';
 import notifications from './routes/notification.route.js'
 import postRoutes from './routes/post.route.js'
-import path from 'path'; 
 
 dotenv.config(); 
 console.log("cloudname : ", process.env.CLOUDINARY_CLOUD_NAME)
@@ -20,7 +19,7 @@ cloudinary.config({
 });
 
 const app = express(); 
-const __dirname = path.resolve(); 
+ 
 
 const PORT = process.env.PORT|| 8000; 
  
